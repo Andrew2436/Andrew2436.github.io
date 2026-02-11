@@ -1,0 +1,4 @@
+Docker Reflection
+When a user enters my Github URL into a search bar, the browser searches for the domain name using a Domain Name System (DNS). Then the browser will then send a HTTP request to Github and Github will send an HTTP response back to the browser with my files. The browser will receive the response and the user will be able to see the webpage.
+
+Github pages do not allow you to run a fully functional customizable website that lets the user exercise full creativity. It hosts more simple websites that are built with HTML and CSS and can not run backend. A docker container on the other hand allows for users to build a fully functional website including frontend and backend. It also does not limit the user.
