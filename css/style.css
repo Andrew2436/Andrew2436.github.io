@@ -1,0 +1,99 @@
+
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+/* ID > Class > General specificity, ID has the highest specificity */
+p {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+}
+
+.head {
+    background-color: pink;
+}
+
+#welcomemsg {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.skillcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.box{
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;
+}
+.box th, .box td {
+    padding: 5px;
+    font-size: 16px;
+}
+.box table{
+    width: 95%;
+    height: 90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+#box1{
+    background-color: lightgreen;
+}
+#box2{
+    background-color: lightyellow;
+}
+
+.projectcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectbox {
+    width: 200px;
+    height: 200px;
+}
+#pbox1 {
+    background-color: red;
+}
+
+#pbox2 {
+    background-color: blueviolet;
+}
+
+#pbox3 {
+    background-color: blue;
+}
+
+#pbox4 {
+    background-color: purple;
+}

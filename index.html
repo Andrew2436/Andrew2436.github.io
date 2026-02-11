@@ -5,6 +5,7 @@
         <title>
             My Website
         </title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -12,7 +13,7 @@
             <h1>
                 Andrew Wong
             </h1>
-            <p>
+            <p class= "head" id="welcomemsg">
                 Hello, welcome to my portfolio. I'm a undergraduate in Hunter and I love tinkering with mini projects.
             </p>
         </header>
@@ -26,44 +27,58 @@
 
         <main>
             <!--Skills section-->
-            <section id="skills">
-                <!--Table for specific skills-->
-                <table border="1">
-                    <thead>
-                        <th>Languages</th>
-                        <th>Utilities and FrameWorks</th>
-                    </thead>
+            <div class = "skillcontainer">
+                <div class="box" id="box1">
+                    <!--2 sections, practical and concepts-->
+                    <section id="skills">
+                        <!--Table for specific skills-->
+                        <table border="1">
+                            <thead>
+                                <th>Languages</th>
+                                <th>Utilities and FrameWorks</th>
+                            </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>C++</td>
-                            <td>MongoDB</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>React</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tbody>
+                                <tr>
+                                    <td>C++</td>
+                                    <td>MongoDB</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>React</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
 
-                <!--List of conceptual skills-->
-                <h3>Concepts</h3>
-                <ul>
-                    <li>Data Structures</li>
-                    <li>UI/UX design</li>
-                    <li>Computer Networks</li>
-                </ul>
-            </section>
+                <div class="box" id="box2">
+                    <!--List of conceptual skills-->
+                    <h3>Concepts</h3>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>UI/UX design</li>
+                        <li>Computer Networks</li>
+                    </ul>
+                </div>
+                </section>
+            </div>
             
             <!--Project section-->
             <section id="projects">
                 <h2>Projects</h2>
             </section>
 
+            <div class = "projectcontainer">
+                <div class="projectbox" id="pbox1"></div>
+                <div class="projectbox" id="pbox2"></div>
+                <div class="projectbox" id="pbox3"></div>
+                <div class="projectbox" id="pbox4"></div>
+            </div>
+
         </main>
         
         <footer>
-            <p>Temp</p>
+            <p2>Footer</p2>
         </footer>
     </body>
 
