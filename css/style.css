@@ -144,3 +144,46 @@ h2 {
 }
 
 /* Mobile adjustments */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks {
+        width: 100%;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .navlinks a {
+        display: block;
+        padding: 8px;
+    }
+
+    .projectcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .skillcontainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .projectbox p {
+        font-size: 15px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+}
