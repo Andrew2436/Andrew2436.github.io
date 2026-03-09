@@ -9,21 +9,25 @@
     </head>
 
     <body>
+
         <header>
-            <h1>
-                Andrew Wong
-            </h1>
+            <!--Navbar-->
+            <nav class="navbar">
+                <div class="logoname">Andrew Wong</div>
+
+                <ul class = "navlinks">
+                    <!--Links to project and github, same page and new window & website-->
+                    <li> <a href="#projects">My Projects</a> </li>
+                    <li> <a href="#skills">My Skills</a> </li>
+                    <li> <a href="https://github.com/Andrew2436" target="_blank" rel="noopener">My Github</a> </li>
+                </ul>
+            </nav>
+
+
             <p class= "head" id="welcomemsg">
                 Hello, welcome to my portfolio. I'm a undergraduate in Hunter and I love tinkering with mini projects.
             </p>
         </header>
-
-        <nav>
-            <!--Links to project and github, same page and new window & website-->
-            <a href="#projects">My Projects</a> 
-            <a href="#skills">My Skills</a>
-            <a href="https://github.com/Andrew2436" target="_blank" rel="noopener">My Github</a>
-        </nav>
 
         <main>
             <!--Skills section-->
@@ -63,22 +67,37 @@
                 </section>
             </div>
             
-            <!--Project section-->
+            <!--New Project section-->
             <section id="projects">
                 <h2>Projects</h2>
-            </section>
 
-            <div class = "projectcontainer">
-                <div class="projectbox" id="pbox1"></div>
-                <div class="projectbox" id="pbox2"></div>
-                <div class="projectbox" id="pbox3"></div>
-                <div class="projectbox" id="pbox4"></div>
-            </div>
+                <div class="projectcontainer">
+
+                    <div class="projectbox">
+                        <img src="css/cat2.jpg" alt="Project 1">
+                        <h3>SpaceInvaders</h3>
+                        <p>A classic game of space invaders built using HTML and CSS.</p>
+                    </div>
+
+                    <div class="projectbox">
+                        <img src="css/cat2.jpg" alt="Project 2">
+                        <h3>Nestpals</h3>
+                        <p>A MERN project that helps users find roommates and apartments.</p>
+                    </div>
+
+                    <div class="projectbox">
+                        <img src="css/cat2.jpg" alt="Project 3">
+                        <h3>Bullseye Blitz</h3>
+                        <p>2D browser game using a custom game engine built with OpenGL, CMAKE, and GLFW.</p>
+                    </div>
+
+                </div>
+            </section>
 
         </main>
         
         <footer>
-            <p2>Footer</p2>
+            <p>Footer</p>
         </footer>
     </body>
 

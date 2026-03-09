@@ -1,10 +1,38 @@
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(53, 52, 52);
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin: 6px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.navlinks a:hover {
+    background-color: black;
+}
+
+.logoname {
+    color: white;
+    margin-left: 1%;
+}
 
 h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 60px;
-    font-size: 50px;
+    font-size: 20px;
 }
 
 /* ID > Class > General specificity, ID has the highest specificity */
@@ -28,14 +56,6 @@ footer {
     background-color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
-}
-
 h2 {
     text-align: center;
     font-size: 50px;
@@ -53,7 +73,7 @@ h2 {
     border: 3px solid black;
     border-radius: 20px;
     display: flex;
-    justify-content: center; /* horizontal */
+    justify-content: center;
     align-items: center;
 }
 .box th, .box td {
@@ -74,13 +94,38 @@ h2 {
 }
 
 .projectcontainer {
-    display: flex;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 25px;
+    padding: 40px;
 }
 
+/* project card */
 .projectbox {
-    width: 200px;
-    height: 200px;
+    border: 2px solid black;
+    border-radius: 13px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+/* project images */
+.projectbox img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* project title */
+.projectbox h3 {
+    margin-top: 10px;
+}
+
+/* project description */
+.projectbox p {
+    background: none;
+    font-size: 14px;
 }
 #pbox1 {
     background-color: red;
@@ -96,4 +141,45 @@ h2 {
 
 #pbox4 {
     background-color: purple;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks {
+        width: 100%;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .navlinks a {
+        display: block;
+        padding: 8px;
+    }
+
+    .projectcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .skillcontainer {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .projectbox p {
+        font-size: 15px;
+    }
+
 }
